@@ -13,7 +13,7 @@ API Integration: Integration with external APIs for task retrieval and submissio
 Install dependencies for the client and server:
 
 ```
-npm run install
+npm run install-all
 ```
 
 ## ⚙️ Running the tests
