@@ -1,0 +1,25 @@
+{
+  "name": "dynamic-calculator",
+  "version": "1.0.0",
+  "scripts": {
+    "installteste": "npm install && concurrently \"npm install --prefix client\" \"npm install --prefix server\"",
+    "start": "concurrently \"npm server\" \"npm client\"",
+    "client": "npm start --prefix client",
+    "server": "nodemon --watch server/src --exec ts-node server/src/index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "concurrently": "^8.2.2",
+    "nodemon": "^3.1.4",
+    "ws": "^8.18.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.9",
+    "@types/ws": "^8.5.10",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.3"
+  }
+}
